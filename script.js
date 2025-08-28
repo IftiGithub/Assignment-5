@@ -35,3 +35,14 @@ for(const copy of copies){
         document.getElementById("copy-count").innerText=finalCopyCount
     })
 }
+//add to clipboard section
+const copyNumbers=document.getElementsByClassName("copy-btn")
+for(const copyNumber of copyNumbers){
+    copyNumber.addEventListener("click",function(){
+        const card=copyNumber.closest(".bg-white")
+        const numberEl=card.querySelector(".number")
+        const numberText=numberEl.innerText
+        navigator.clipboard.writeText(numberText)
+        alert("Number Copied")
+    })
+}
