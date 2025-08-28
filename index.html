@@ -38,7 +38,7 @@
             the People’s
             Republic of Bangladesh</p>
     </section>
-    <section class="mt-[20px] max-h-[2000px] bg-green-200 flex gap-[20px] lg:bg-green-50">
+    <section class="max-h-[5000px] bg-green-200 sm:bg-green-50 lg:flex gap-[20px] mt-[20px]">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-[20px] h-full w-full p-[20px] lg:w-7/10">
             <div class="bg-white rounded-xl">
                 <div class="h-8/10 p-[20px]">
@@ -54,7 +54,7 @@
                             </svg>
                         </button>
                     </div>
-                    <p class="mt-5 font-bold">National Emergency Number</p>
+                    <p class="name mt-5 font-bold">National Emergency Number</p>
                     <p class="font-light">National Emergency</p>
                     <p class="number font-bold text-2xl">999</p>
                     <div class="my-5 max-h-[50px] max-w-[70px] rounded-xl bg-gray-100 p-2">
@@ -82,7 +82,7 @@
                             </svg>
                         </button>
                     </div>
-                    <p class="mt-5 font-bold">Police Helpline Number</p>
+                    <p class="name mt-5 font-bold">Police Helpline Number</p>
                     <p class="font-light">Police</p>
                     <p class="number font-bold text-2xl">999</p>
                     <div class="my-5 max-h-[50px] max-w-[70px] rounded-xl bg-gray-100 p-2">
@@ -110,7 +110,7 @@
                             </svg>
                         </button>
                     </div>
-                    <p class="mt-5 font-bold">Fire Service Number</p>
+                    <p class="name mt-5 font-bold">Fire Service Number</p>
                     <p class="font-light">Fire Service</p>
                     <p class="number font-bold text-2xl">999</p>
                     <div class="my-5 max-h-[50px] max-w-[70px] rounded-xl bg-gray-100 p-2">
@@ -138,7 +138,7 @@
                             </svg>
                         </button>
                     </div>
-                    <p class="mt-5 font-bold">Ambulance Service</p>
+                    <p class="name mt-5 font-bold">Ambulance Service</p>
                     <p class="font-light">Ambulance</p>
                     <p class="number font-bold text-2xl">1994-999999</p>
                     <div class="my-5 max-h-[50px] max-w-[70px] rounded-xl bg-gray-100 p-2">
@@ -166,7 +166,7 @@
                             </svg>
                         </button>
                     </div>
-                    <p class="mt-5 font-bold">Women & Child Helpline</p>
+                    <p class="name mt-5 font-bold">Women & Child Helpline</p>
                     <p class="font-light">Women & Child Helpline</p>
                     <p class="number font-bold text-2xl">109</p>
                     <div class="my-5 max-h-[50px] max-w-[70px] rounded-xl bg-gray-100 p-2">
@@ -194,7 +194,7 @@
                             </svg>
                         </button>
                     </div>
-                    <p class="mt-5 font-bold">Anti-Corruption Helpline</p>
+                    <p class="name mt-5 font-bold">Anti-Corruption Helpline</p>
                     <p class="font-light">Anti-Corruption</p>
                     <p class="number font-bold text-2xl">106</p>
                     <div class="my-5 max-h-[50px] max-w-[70px] rounded-xl bg-gray-100 p-2">
@@ -209,15 +209,19 @@
                 </div>
             </div>
         </div>
-        <div
-            class="hidden lg:flex h-full w-3/10 mr-5 my-8 bg-white rounded-2xl justify-between items-center p-[20px]">
-            <div>
-                <p><span><i class="fa-solid fa-clock-rotate-left"></i></span> Call History</p>
-            </div>
-            <div>
-                <button class="btn btn-outline bg-green-600 text-white w-[100px] rounded-3xl">Clear</button>
-            </div>
+        <div class="h-full p-[20px] lg:w-3/10 bg-white rounded-2xl m-[20px]">
+            <div class="flex justify-between items-center p-[20px]">
+                <div>
+                    <p><span><i class="fa-solid fa-clock-rotate-left"></i></span> Call History</p>
+                </div>
+                <div>
+                    <button id="clear-btn"
+                        class="btn btn-outline bg-green-600 text-white w-[100px] rounded-3xl">Clear</button>
+                </div>
 
+            </div>
+            <div id="history-container">
+            </div>
         </div>
     </section>
     <script src="./script.js"></script>
