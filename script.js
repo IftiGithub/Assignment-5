@@ -27,7 +27,7 @@ for (const call of calls) {
         if (coinCount >= 20) {
             const finalCoinCount = coinCount - 20
             document.getElementById("coin-count").innerText = finalCoinCount
-            alert(`Calling..\n${data.name}\n${data.number}`)
+            alert(`Calling...\n${data.name}\n${data.number}`)
         }
         else {
             alert("Insufficient currency")
